@@ -1,32 +1,61 @@
-  <!DOCTYPE html>
-<html lang="pt-br"
+<!DOCTYPE html>
+<html lang="pt-BR">
     <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Blog</title>
+    <title>Blog da Maria | Maquiagem sem complicação</title>
      <style>
-        header{
-          background-color: #183C63;
-          color: #FFFFFF;
-          text-align: center;
-          max-width: 800px;
-          margin: 0 auto;
-     } 
-    main{
-          background-color: #FFFFFF;
-       color:#183C63;   
-     }
+        :root { --vinho: #6f2744; --rosa: #f6dce2; --creme: #fffaf7; --texto: #34262a; --dourado: #b47b52; }
+        * { box-sizing: border-box; }
+        body { margin: 0; background: linear-gradient(135deg, #fffaf7 0%, #f8e9e5 100%); color: var(--texto); font-family: Georgia, 'Times New Roman', serif; line-height: 1.7; }
+        header { padding: 3.5rem 1.5rem; background: var(--vinho); color: #fff; text-align: center; border-bottom: 8px solid var(--dourado); }
+        header h1 { margin: 0; font-size: clamp(2.2rem, 7vw, 4.5rem); }
+        header p { margin: .5rem auto 0; max-width: 620px; font-size: 1.15rem; }
+        main { max-width: 920px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+        article { background: var(--creme); padding: clamp(1.25rem, 4vw, 3rem); box-shadow: 0 12px 35px rgba(111, 39, 68, .12); }
+        h2, h3 { color: var(--vinho); line-height: 1.2; }
+        h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-top: 0; }
+        h3 { margin-top: 2rem; border-left: 4px solid var(--dourado); padding-left: .75rem; }
+        .meta { color: #765c63; font-style: italic; }
+        .resultado { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 1.5rem 0; }
+        .foto { min-height: 190px; display: grid; place-items: center; padding: 1rem; text-align: center; background: var(--rosa); color: var(--vinho); border: 2px solid #e9bcc8; }
+        .foto strong { display: block; font-size: 1.25rem; }
+        ul, ol { padding-left: 1.4rem; }
+        li { margin: .45rem 0; }
+        .dica { padding: 1rem 1.25rem; background: #f9ecd5; border: 1px solid #dfbd82; }
+        .termo { color: var(--vinho); font-weight: bold; }
+        a { color: var(--vinho); font-weight: bold; }
+        .pergunta { margin-top: 2.5rem; padding: 1.25rem; background: var(--vinho); color: #fff; font-size: 1.15rem; }
+        @media (max-width: 560px) { .resultado { grid-template-columns: 1fr; } }
      </style>
     </head>
     <body>
     <header>
- <h1>Meu blog tech</h1>
-        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+ <h1>Blog da Maria</h1>
+   <p>Beleza real, técnicas possíveis e maquiagem sem complicação</p>
   </header>
   <main>
-  <h2>Meu primeiro post</h2>
-   <p>Por: Maria Eduarda</p>
-  <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
-    <main>
+  <article>
+  <h2>Maquiagem fresca para o dia a dia</h2>
+  <p class="meta">Por Maria Eduarda | Tutorial completo</p>
+  <p>Uma produção leve, iluminada e fácil de adaptar para a rotina. O resultado valoriza sua beleza sem esconder a textura natural da pele.</p>
+  <h3>Antes e depois</h3>
+  <div class="resultado"><div class="foto"><div><strong>Antes</strong>Pele limpa e hidratada, pronta para começar</div></div><div class="foto"><div><strong>Depois</strong>Acabamento viçoso, olhos definidos e boca corada</div></div></div>
+  <h3>Para qual tipo de pele?</h3>
+  <p>Este tutorial funciona para peles <strong>secas, oleosas e mistas</strong>. Em pele oleosa, prefira hidratante em gel e sele a zona T (testa, nariz e queixo) com pó. Em pele seca, use uma camada fina de hidratante nutritivo e evite excesso de pó.</p>
+  <h3>Lista de produtos</h3>
+  <ul><li>Hidratante facial e protetor solar de sua preferência</li><li>Base leve ou BB cream, corretivo e blush cremoso pêssego</li><li>Pó translúcido, máscara de cílios e lápis marrom</li><li>Batom rosado, gloss e iluminador champanhe</li><li>Pincel de base, pincel fofo para pó, pincel chanfrado e esponja úmida</li></ul>
+  <h3>Pele</h3>
+  <ol><li>Hidrate, aplique o protetor solar e espere alguns minutos.</li><li>Espalhe a base do centro do rosto para fora com a esponja, sem apagar toda a textura.</li><li>Use corretivo apenas onde precisar e sele suavemente a zona T.</li><li>Toque o blush nas maçãs do rosto e finalize com um ponto de iluminador.</li></ol>
+  <h3>Olhos</h3>
+  <ol><li>Esfume uma sombra marrom clara no côncavo com movimentos circulares.</li><li>Faça um traço curto rente aos cílios com lápis marrom e suavize a ponta.</li><li>Aplique duas camadas de máscara, concentrando o produto nos cílios externos.</li></ol>
+  <p><span class="termo">Blending</span> é o ato de esfumar e misturar as sombras para não deixar marcas. Para este visual, não é necessário fazer um <span class="termo">cut crease</span>, técnica que cria um côncavo bem marcado.</p>
+  <h3>Boca</h3>
+  <ol><li>Hidrate os lábios e retire o excesso com um lenço.</li><li>Aplique o batom rosado no centro e espalhe com os dedos.</li><li>Finalize com gloss no centro dos lábios para criar volume.</li></ol>
+  <p class="dica"><strong>Dica de ouro:</strong> borrife a bruma fixadora na esponja antes de pressioná-la sobre a pele. O acabamento fica mais integrado e dura melhor ao longo do dia.</p>
+  <p>Encontre produtos parecidos em sua perfumaria favorita ou consulte este <a href="https://www.boticario.com.br/" target="_blank" rel="noopener noreferrer">link de compra</a> para pesquisar opções de maquiagem.</p>
+  <p class="pergunta"><strong>E você?</strong> Prefere essa maquiagem leve para o dia a dia ou uma técnica mais marcante, como um delineado gatinho?</p>
+  </article>
+  </main>
   </body>
 </html>
